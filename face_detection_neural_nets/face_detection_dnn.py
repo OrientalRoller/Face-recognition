@@ -4,7 +4,7 @@ import cv2
 
 
 
-face_detection_model=cv2.dnn.readNetFromCaffe("/Users/shubhankarrai/Desktop/development/opencv/project_face_detection/face_detection_neural_nets/models/deploy.prototxt.txt",'/Users/shubhankarrai/Desktop/development/opencv/project_face_detection/face_detection_neural_nets/models/res10_300x300_ssd_iter_140000_fp16.caffemodel')
+face_detection_model=cv2.dnn.readNetFromCaffe("path/to/models/deploy.prototxt.txt",'path/to/models/res10_300x300_ssd_iter_140000_fp16.caffemodel')
 def face_detection_dnn(img):
     #step 1 blob from image 
     blob=cv2.dnn.blobFromImage(img,1,(300,300),(104,177,123),swapRB=True)
