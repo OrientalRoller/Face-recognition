@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 import os
-os.chdir('/Users/shubhankarrai/Desktop/development/opencv/project_face_detection/face_detection_higher_casade')
+os.chdir('Path/to/your/dir')
 
 
 def display(window,image,time):
@@ -11,7 +11,7 @@ def display(window,image,time):
 
 
 def face_detection(image): 
-    face_cascade=cv2.CascadeClassifier('/Users/shubhankarrai/Desktop/development/opencv/project_face_detection/face_detection_higher_casade/model/haarcascade_frontalface_default.xml')
+    face_cascade=cv2.CascadeClassifier('path/to/model/haarcascade_frontalface_default.xml')
     
     #1 cnvt image into grayscale
     gray_image=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
