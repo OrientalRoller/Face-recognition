@@ -4,7 +4,7 @@ from face_detection_dnn import face_detection_dnn
 
 cap=cv2.VideoCapture(0)
 
-face_detection_model=cv2.dnn.readNetFromCaffe('/Users/shubhankarrai/Desktop/development/opencv/project_face_detection/face_detection_neural_nets/models/deploy.prototxt.txt','/Users/shubhankarrai/Desktop/development/opencv/project_face_detection/face_detection_neural_nets/models/res10_300x300_ssd_iter_140000_fp16.caffemodel')
+face_detection_model=cv2.dnn.readNetFromCaffe('path/to/models/deploy.prototxt.txt','path/to/models/res10_300x300_ssd_iter_140000_fp16.caffemodel')
 
 while True:
     ret,frame=cap.read()
