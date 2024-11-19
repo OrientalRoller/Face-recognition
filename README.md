@@ -1,5 +1,4 @@
-# Face-recognition
-basic face regonition system using different algorithms
+
 <h1>Face recognition git repo</h1>
 <br>
 not that advanced and it uses old models
